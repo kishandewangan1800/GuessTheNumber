@@ -36,6 +36,8 @@ submit.addEventListener("click", (e) => {
       para4.innerText = "You guessed correctly!";
       para5.innerHTML = `<button class="button" onclick="location.reload()">Start New Game</button>`;
       para5.classList.remove("para");
+      para2.innerText += " " + guess.value;
+
       guess.disabled=true;
     } else {
       para2.innerText += " " + guess.value;
